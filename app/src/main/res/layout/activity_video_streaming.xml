@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoStreamingActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbarstreaming"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/blue">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/Rate"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="7.5dp"
+                    android:src="@drawable/ic_baseline_star_border_24" />
+
+                <ImageView
+                    android:id="@+id/info"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="7.5dp"
+                    android:src="@drawable/ic_baseline_info_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal"
+                android:paddingStart="25dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="25dp"
+                android:paddingBottom="15dp">
+
+                <ImageView
+                    android:id="@+id/Back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="@color/white"
+                    app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentEnd="false"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToOutline="true"
+                    android:padding="15dp"
+                    app:srcCompat="@drawable/movieflixtext_no_background" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000C32">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/AspectLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.exoplayer2.ui.AspectRatioFrameLayout
+                        android:id="@+id/video_ratio1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.exoplayer2.ui.StyledPlayerView
+
+                            android:id="@+id/video_playerview1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/background_dark"
+                            app:controller_layout_id="@layout/custom_controller"
+                            app:player_layout_id="@layout/exo_player_view"
+                            app:show_buffering="when_playing"
+                            app:use_controller="true" />
+
+                    </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/enadiotria"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/adView"
+                    android:layout_below="@id/AspectLinearLayout"
+                    android:background="#030F37" >
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/textYear"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/rounded_corner_text"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:maxLines="1"
+                                    android:paddingStart="5dp"
+                                    android:paddingTop="2.5dp"
+                                    android:paddingEnd="5dp"
+                                    android:paddingBottom="2.5dp"
+                                    android:textColor="#000C32"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textGenre"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@drawable/rounded_corner_text"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:maxLines="1"
+                                    android:paddingStart="5dp"
+                                    android:paddingTop="2.5dp"
+                                    android:paddingEnd="5dp"
+                                    android:paddingBottom="2.5dp"
+                                    android:textColor="#000C32"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/DurationText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@drawable/rounded_corner_text"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:maxLines="1"
+                                    android:paddingStart="5dp"
+                                    android:paddingTop="2.5dp"
+                                    android:paddingEnd="5dp"
+                                    android:paddingBottom="2.5dp"
+                                    android:textColor="#000C32"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/DescriptionLinearLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textDescriptionIndicator"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Περιγραφή:"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textDescription"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="7.5dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:textColor="#C9FFFFFF"
+                                    android:textSize="12sp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.core.widget.NestedScrollView>
+
+                </RelativeLayout>
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    app:adSize="BANNER"
+                    app:adUnitId="@string/Banner_Real_Movies_Id" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/progressBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

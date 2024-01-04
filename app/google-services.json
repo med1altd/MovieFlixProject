@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "325159160775",
+    "project_id": "movieflix-live-tv",
+    "storage_bucket": "movieflix-live-tv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325159160775:android:2338309e1b091c7b3c67e2",
+        "android_client_info": {
+          "package_name": "com.med1altd.movieflix"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXohXr3UAOxVxyCIRMY8wnLX0OuPH4lIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

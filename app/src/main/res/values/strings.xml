@@ -1,0 +1,91 @@
+<resources>
+
+    <string name="app_name">MovieFlix</string>
+
+    <string name="main_json">https://med1altd.github.io/MovieFlixGr/main.json</string>
+
+    <string name="AdMobRealId">ca-app-pub-6182240220747706~3242777830</string>
+
+    <string name="Banner_Real_TV_Id">ca-app-pub-6182240220747706/1696394897</string>
+    <string name="Banner_Real_Movies_Id">ca-app-pub-6182240220747706/2081723494</string>
+    <string name="Banner_Real_Series_Id">ca-app-pub-6182240220747706/8455560157</string>
+
+    <string name="Interstitial_Real_TV_Id">ca-app-pub-6182240220747706/2325307639</string>
+    <string name="Interstitial_Real_Movies_Id">ca-app-pub-6182240220747706/9684922905</string>
+    <string name="Interstitial_Real_Series_Id">ca-app-pub-6182240220747706/7306171576</string>
+    <string name="Interstitial_Movies_Open_Id">ca-app-pub-6182240220747706/5031362028</string>
+    <string name="Interstitial_Series_Open_Id">ca-app-pub-6182240220747706/3909836130</string>
+
+    <!--
+
+    <string name="TMDB_API">753fba9d8bfbd1068ebd0b4437209a8a</string>
+
+    <string name="AdMobTestId">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="AdMobRealId">ca-app-pub-6182240220747706~3242777830</string>
+
+    <string name="Banner_Test_Id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="Interstitial_Test_Id">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="Banner_Real_TV_Id">ca-app-pub-6182240220747706/1696394897</string>
+    <string name="Banner_Real_Movies_Id">ca-app-pub-6182240220747706/2081723494</string>
+    <string name="Banner_Real_Series_Id">ca-app-pub-6182240220747706/8455560157</string>
+    <string name="Interstitial_Real_TV_Id">ca-app-pub-6182240220747706/3011661783</string>
+    <string name="Interstitial_Real_Movies_Id">ca-app-pub-6182240220747706/1107553172</string>
+    <string name="Interstitial_Real_Series_Id">ca-app-pub-6182240220747706/6463821633</string>
+    <string name="Interstitial_Movies_Open_Id">ca-app-pub-6182240220747706/5258551174</string>
+    <string name="Interstitial_Series_Open_Id">ca-app-pub-6182240220747706/6930725499</string>
+
+    1a ID's Pou Exo Kleisei Logo AdMob Periorismou
+
+    <string name="Banner_Real_MainActivity_Id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="Banner_Real_Kids_Movies_Id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="Interstitial_Real_Kids_Movies_Id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="Interstitial_Open_Id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="Interstitial_Real_TV_Id_TV">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="Interstitial_Real_Movies_Id_TV">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="Interstitial_Real_Series_Id_TV">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="Interstitial_Real_Kids_Movies_Id_TV">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="Interstitial_Real_Movies_Info_Id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="Interstitial_Real_Series_Info_Id">ca-app-pub-3940256099942544/1033173712</string>
+
+    2a ID's Pou Tha Steilo Me Update eno exo ston server tropo pou managaro ta ad request per minute ana xristi
+
+    <string name="Banner_Real_TV_Id">ca-app-pub-6182240220747706/1696394897</string>
+    <string name="Banner_Real_Movies_Id">ca-app-pub-6182240220747706/2081723494</string>
+    <string name="Banner_Real_Series_Id">ca-app-pub-6182240220747706/8455560157</string>
+    <string name="Interstitial_Real_TV_Id">ca-app-pub-6182240220747706/2325307639</string>
+    <string name="Interstitial_Real_Movies_Id">ca-app-pub-6182240220747706/9684922905</string>
+    <string name="Interstitial_Real_Series_Id">ca-app-pub-6182240220747706/7306171576</string>
+    <string name="Interstitial_Movies_Open_Id">ca-app-pub-6182240220747706/9684922905</string>
+    <string name="Interstitial_Series_Open_Id">ca-app-pub-6182240220747706/3909836130</string>
+
+
+
+
+    <string name="Banner_Real_TV_Id">ca-app-pub-6182240220747706/1696394897</string>
+    <string name="Banner_Real_Movies_Id">ca-app-pub-6182240220747706/2081723494</string>
+    <string name="Banner_Real_Series_Id">ca-app-pub-6182240220747706/8455560157</string>
+
+    <string name="Interstitial_Real_TV_Id">ca-app-pub-6182240220747706/2325307639</string>
+    <string name="Interstitial_Real_Movies_Id">ca-app-pub-6182240220747706/9684922905</string>
+    <string name="Interstitial_Real_Series_Id">ca-app-pub-6182240220747706/7306171576</string>
+    <string name="Interstitial_Movies_Open_Id">ca-app-pub-6182240220747706/9684922905</string>
+    <string name="Interstitial_Series_Open_Id">ca-app-pub-6182240220747706/3909836130</string>
+
+
+    <string name="Banner_Real_TV_Id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="Banner_Real_Movies_Id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="Banner_Real_Series_Id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="Interstitial_Real_TV_Id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="Interstitial_Real_Movies_Id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="Interstitial_Real_Series_Id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="Interstitial_Movies_Open_Id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="Interstitial_Series_Open_Id">ca-app-pub-3940256099942544/1033173712</string>
+
+
+     -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

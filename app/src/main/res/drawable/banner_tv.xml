@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/color_splash_screen"
+        android:height="1080px"
+        android:width="1920px" />
+    <item android:drawable="@drawable/movieflix_icon_no_background"
+        android:height="400px"
+        android:width="400px"
+        android:gravity="center" />
+</layer-list>
