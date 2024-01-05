@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tv"
+        android:title="Τηλεόραση"
+        android:icon="@drawable/tv_icon" />
+
+    <item
+        android:id="@+id/tainies"
+        android:title="Ταινίες"
+        android:icon="@drawable/movies_icon" />
+
+    <item
+        android:id="@+id/seires"
+        android:title="Σειρές"
+        android:icon="@drawable/series_icon" />
+
+    <item
+        android:id="@+id/paidika"
+        android:title="Παιδικά"
+        android:icon="@drawable/kids_icon" />
+    
+</menu>

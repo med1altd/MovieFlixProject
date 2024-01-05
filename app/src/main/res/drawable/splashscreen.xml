@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/blue" />
+    <item
+        android:left="25dp"
+        android:top="25dp"
+        android:right="25dp"
+        android:bottom="25dp"
+        android:drawable="@drawable/movieflix_icon_no_background"
+        android:gravity="center"
+        android:height="150dp"
+        android:width="150dp" />
+</layer-list>

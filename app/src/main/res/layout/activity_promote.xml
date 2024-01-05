@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PromoteActivity">
+
+    <LinearLayout
+        android:id="@+id/promoteLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000C32"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/promoteTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/GreekVersionLayout"
+                android:layout_alignParentBottom="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Η Εφαρμογή MovieFlix ενημερώθηκεΗ Εφαρμογή MovieFlix ενημερώθηκεΗ Εφαρμογή MovieFlix ενημερώθηκεΗ Εφαρμογή MovieFlix ενημερώθηκεΗ Εφαρμογή MovieFlix ενημερώθηκεΗ Εφαρμογή MovieFlix ενημερώθηκεΗ Εφαρμογή MovieFlix ενημερώθηκεΗ Εφαρμογή MovieFlix ενημερώθηκε"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/GreekVersionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:cardBackgroundColor="#030F37"
+                    app:cardCornerRadius="16dp"
+                    app:layout_constraintDimensionRatio="H,16:9"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#030F37" />
+
+                    <ImageView
+                        android:id="@+id/imageMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarPromoteImage"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/promoteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/yellow"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="15dp"
+                app:cardCornerRadius="6dp">
+
+                <TextView
+                    android:id="@+id/promoteButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_selector"
+                    android:backgroundTint="@color/yellow"
+                    android:focusable="false"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Εγκατάσταση"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/promoteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_selector"
+                android:backgroundTint="@color/yellow"
+                android:focusable="false"
+                android:text="Download"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/promoteNotesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/promoteButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="Η Εφαρμογή MovieFlix ενημερώθηκε"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ProgressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000222"
+        android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
